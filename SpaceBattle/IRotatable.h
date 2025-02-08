@@ -12,7 +12,7 @@ protected:
 public:
 	virtual Angle* getDirection() = 0;
 	virtual int getAngularVelocity() = 0;
-	virtual void setDirection(Angle ang) = 0;
+	virtual void setDirection(Angle *ang) = 0;
 };
 
 #endif

@@ -5,7 +5,7 @@
 add_library(SpaceBattle STATIC
   "Move.cpp" "Move.h" 
   "IMovable.h"
-  "Vector2d.cpp" "Vector2d.h" 
+  "Vector.cpp" "Vector.h" 
   "Angle.cpp" "Angle.h"
   "IRotatable.h"
   "Rotate.cpp" "Rotate.h"

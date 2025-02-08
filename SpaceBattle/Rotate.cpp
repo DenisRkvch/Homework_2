@@ -10,6 +10,8 @@ Rotate::~Rotate()
 
 void Rotate::execute()
 {
-	rObj->setDirection(Angle::plus(*rObj->getDirection(), rObj->getAngularVelocity()));
+	Angle* result = Angle::plus(*rObj->getDirection(), rObj->getAngularVelocity());
+	rObj->setDirection(result);
+	delete result;
 }
 

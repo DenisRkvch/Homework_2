@@ -9,5 +9,8 @@ Move::~Move()
 
 void Move::execute()
 {
-	mObj->setPosition(Vector2d::plus(*mObj->getPosition(), *mObj->getVelocity()));	
+	Vector *result = Vector::plus(*mObj->getPosition(), *mObj->getVelocity());
+	mObj->setPosition(result);
+	delete result;
+
 }
